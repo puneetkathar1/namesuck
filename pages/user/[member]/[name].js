@@ -3,14 +3,13 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import absoluteUrl from "next-absolute-url";
-function Name({origin}) {
-
+function Name({ origin }) {
   const router = useRouter();
   const { member, name } = router.query;
 
   const [scary, setScary] = React.useState("0");
   const [display, setDisplay] = React.useState("block");
-  const [img, setImg] = React.useState(1);
+  const [img, setImg] = React.useState();
   const [jump, setJump] = useState(false);
 
   const timeout = setTimeout(() => {

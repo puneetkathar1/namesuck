@@ -69,8 +69,8 @@ const SVGComponent = ({ origin }) => {
       .request(options)
       .then(function (response) {
         getImg(response.data);
-        setSrc(response.data.image_url);
         setNFTdata(response.data);
+        setSrc(response.data.image_url);
       })
       .catch(function (error) {
         console.error(error);
@@ -81,32 +81,51 @@ const SVGComponent = ({ origin }) => {
 
   const [open, setOpen] = React.useState(false);
   const [scary, setScary] = React.useState("0");
-  const [img, setImg] = React.useState();
+  const [img, setImg] = React.useState(null);
 
   const getImg = (data) => {
-    0 <= data.token_id && data.token_id <= 2041
-      ? setImg(1)
-      : 2042 <= data.token_id && data.token_id <= 4077
-      ? setImg(2)
-      : 4078 <= data.token_id && data.token_id <= 6113
-      ? setImg(3)
-      : 6114 <= data.token_id && data.token_id <= 8152
-      ? setImg(4)
-      : 8153 <= data.token_id && data.token_id <= 10193
-      ? setImg(5)
-      : 10194 <= data.token_id && data.token_id <= 12234
-      ? setImg(6)
-      : 12235 <= data.token_id && data.token_id <= 14275
-      ? setImg(7)
-      : 14276 <= data.token_id && data.token_id <= 16316
-      ? setImg(8)
-      : 16317 <= data.token_id && data.token_id <= 18357
-      ? setImg(9)
-      : 18358 <= data.token_id && data.token_id <= 20396
-      ? setImg(10)
-      : 20397 <= data.token_id && data.token_id <= 20401
-      ? setImg(11)
-      : setImg();
+    if (0 <= data.token_id && data.token_id <= 2041) {
+      setImg(1);
+    }
+    if (2042 <= data.token_id && data.token_id <= 4077) {
+      setImg(2);
+    }
+
+    if (4078 <= data.token_id && data.token_id <= 6113) {
+      setImg(3);
+    }
+
+    if (6114 <= data.token_id && data.token_id <= 8152) {
+      setImg(4);
+    }
+
+    if (8153 <= data.token_id && data.token_id <= 10193) {
+      setImg(5);
+    }
+
+    if (10194 <= data.token_id && data.token_id <= 12234) {
+      setImg(6);
+    }
+
+    if (12235 <= data.token_id && data.token_id <= 14275) {
+      setImg(7);
+    }
+
+    if (14276 <= data.token_id && data.token_id <= 16316) {
+      setImg(8);
+    }
+
+    if (16317 <= data.token_id && data.token_id <= 18357) {
+      setImg(9);
+    }
+
+    if (18358 <= data.token_id && data.token_id <= 20396) {
+      setImg(10);
+    }
+
+    if (20397 <= data.token_id && data.token_id <= 20401) {
+      setImg(11);
+    }
   };
 
   const handleOpen = () => {

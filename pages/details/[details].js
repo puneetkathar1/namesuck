@@ -2,14 +2,22 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import absoluteUrl from "next-absolute-url";
+import { useWeb3 } from "@3rdweb/hooks";
+import { useRouter } from "next/router";
 
 const Details = ({ details, origin }) => {
-
+  const router = useRouter();
   const [scary, setScary] = React.useState("0");
-  const [img, setImg] = React.useState(1);
+  const [img, setImg] = React.useState();
   const [jump, setJump] = useState(false);
-
+  const { address } = useWeb3();
   React.useEffect(() => {
+    if (!address) {
+      router.push("/");
+    }
+  },[])
+  React.useEffect(() => {
+
     if (typeof window !== "undefined") {
       window.addEventListener("message", (event) => {
         // IMPORTANT: check the origin of the data!
@@ -205,7 +213,7 @@ const Details = ({ details, origin }) => {
           }
         `}</style>
         <section id="devices">
-        <div
+          <div
             style={{
               float: "left",
               margin: "1rem",

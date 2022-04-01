@@ -4,13 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import absoluteUrl from "next-absolute-url";
 
-function Name({origin}) {
-
+function Name({ origin }) {
   const router = useRouter();
   const { name } = router.query;
 
   const [scary, setScary] = React.useState("0");
-  const [img, setImg] = React.useState(1);
+  const [img, setImg] = React.useState();
   const [jump, setJump] = useState(false);
   React.useEffect(() => {
     if (typeof window !== "undefined") {
