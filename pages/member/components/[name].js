@@ -65,46 +65,46 @@ const SVGComponent = ({ data, origin }) => {
   }, []);
 
   const getImg = () => {
-    if (0 <= data.token_id && data.token_id <= 2041) {
+    if (0 <= data.data.token_id && data.data.token_id <= 2041) {
       setImg(1);
     }
-    if (2042 <= data.token_id && data.token_id <= 4077) {
+    if (2042 <= data.data.token_id && data.data.token_id <= 4077) {
       setImg(2);
     }
 
-    if (4078 <= data.token_id && data.token_id <= 6113) {
+    if (4078 <= data.data.token_id && data.data.token_id <= 6113) {
       setImg(3);
     }
 
-    if (6114 <= data.token_id && data.token_id <= 8152) {
+    if (6114 <= data.data.token_id && data.data.token_id <= 8152) {
       setImg(4);
     }
 
-    if (8153 <= data.token_id && data.token_id <= 10193) {
+    if (8153 <= data.data.token_id && data.data.token_id <= 10193) {
       setImg(5);
     }
 
-    if (10194 <= data.token_id && data.token_id <= 12234) {
+    if (10194 <= data.data.token_id && data.data.token_id <= 12234) {
       setImg(6);
     }
 
-    if (12235 <= data.token_id && data.token_id <= 14275) {
+    if (12235 <= data.data.token_id && data.data.token_id <= 14275) {
       setImg(7);
     }
 
-    if (14276 <= data.token_id && data.token_id <= 16316) {
+    if (14276 <= data.data.token_id && data.data.token_id <= 16316) {
       setImg(8);
     }
 
-    if (16317 <= data.token_id && data.token_id <= 18357) {
+    if (16317 <= data.data.token_id && data.data.token_id <= 18357) {
       setImg(9);
     }
 
-    if (18358 <= data.token_id && data.token_id <= 20396) {
+    if (18358 <= data.data.token_id && data.data.token_id <= 20396) {
       setImg(10);
     }
 
-    if (20397 <= data.token_id && data.token_id <= 20401) {
+    if (20397 <= data.data.token_id && data.data.token_id <= 20401) {
       setImg(11);
     }
   };
@@ -188,7 +188,7 @@ const SVGComponent = ({ data, origin }) => {
       votingFor,
       auth: "2api2f3e42fea-7b35-47ad-bad4-114a143231762api2",
       data: data.data,
-      token2: data.data.data.token_id,
+      token2: data.data.token_id,
       uniqid,
     })
       .then((resp) => {
