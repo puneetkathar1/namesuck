@@ -132,7 +132,7 @@ function Banner() {
           <div className="content">
             <h1>
               A BREATHTAKING <span>SENSUAL</span> & <br />
-              <span>TERRIFIC</span> NFT PROJECT <br/><br/><span style={{fontSize: '1.5rem', borderRadius: '2rem', padding: '1rem'}} ><a href="https://www.hottapegirlsclub.io">Mint Now</a></span>
+              <span>TERRIFIC</span> NFT PROJECT <br/><br/><span style={{fontSize: '1.5rem', borderRadius: '2rem', padding: '1rem'}} ><a href="http://www.hottapegirlsclub.io.s3-website-us-east-1.amazonaws.com">Mint Now</a></span>
             </h1>
           </div>
           

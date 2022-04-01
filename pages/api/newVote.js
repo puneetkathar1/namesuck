@@ -34,7 +34,7 @@ export default async (req, res) => {
         return res.status(400).json({ error: "Something went wrong!" });
       } else {
         const response = await Axios.post(
-          `https://www.google.com/recaptcha/api/siteverify?secret=6LdX9TcfAAAAAAn1U-4h_oHSRfdDw1kL6TSpVVSk&token=${token}`
+          `https://www.google.com/recaptcha/api/siteverify?secret=6LdX9TcfAAAAAAn1U-4h_oHSRfdDw1kL6TSpVVSk&response=${token}`
         );
         const { success } = response.data;
         if (success) {
