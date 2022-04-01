@@ -195,7 +195,10 @@ const SVGComponent = ({ origin }) => {
         return () => clearTimeout(timeout);
       })
       .catch(({ response }) => {
-        window.top.location.href = `/share/${response.data.user.uniqid}`;
+        console.log(response.data.error);
+        if (response.data.user) {
+          window.top.location.href = `/share/${response.data.user.uniqid}`;
+        }
       })
       .finally(() => {
         reCaptcha.current.reset();

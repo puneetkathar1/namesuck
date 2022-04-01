@@ -10,6 +10,7 @@ const limiter = rateLimit({
 });
 export default async (req, res) => {
   const { auth, owner, name, token, data, token2, uniqid } = req.body;
+  console.log(req.body);
 
   if (auth === "2api2f3e42fea-7b35-47ad-bad4-114a143231762api2") {
     mongoose.connect(
