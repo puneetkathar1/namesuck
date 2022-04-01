@@ -1,0 +1,1176 @@
+
+#deck_area {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+
+@media (max-width: 999px) {
+  #deck_area {
+    padding-top: 3%;
+  }
+}
+
+#deck_area .deckInner {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+@media (max-width: 999px) {
+  #deck_area .deckInner {
+    width: 100%;
+  }
+}
+
+#deck_area::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  left: 0;
+  bottom: -200px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#deck.ui-tabs-panel {
+  background: none !important;
+}
+
+@media (max-width: 999px) {
+  #deck.ui-tabs-panel {
+    padding: 6% 3% 0;
+  }
+}
+
+#deck.ui-tabs-panel:empty {
+  padding: 12% 0;
+}
+
+@media (max-width: 999px) {
+  #deck.ui-tabs-panel:empty {
+    padding: 9% 3%;
+  }
+}
+
+#deck {
+  padding: 10% 0 8%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 999px) {
+  #deck {
+    padding: 15% 3%;
+  }
+}
+
+#deck .deckListinner {
+  font-size: 90%;
+  margin-top: 50px;
+}
+
+#deck .deckListinner .deckListBox {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 999px) {
+  #deck .deckListinner .deckListBox {
+    margin-bottom: 3%;
+    padding: 4%;
+  }
+}
+
+#deck .deckListinner .deckListBox + .deckListBox {
+  margin-top: 10px;
+}
+
+#deck .deckListinner .deckListBox .cardCount {
+  background: #ffe8ea;
+  padding: 5px;
+  width: 80px;
+  text-align: center;
+  color: #e13141;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 999px) {
+  #deck .deckListinner .deckListBox .cardCount {
+    padding: 1%;
+    margin-bottom: 3%;
+  }
+}
+
+#deck .deckListinner .deckListBox .cardBox div + div {
+  border-top: 1px solid #c3cfd5;
+  padding-top: 20px;
+}
+
+#deck .deckListinner .deckListBox .cardImg {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 999px) {
+  #deck .deckListinner .deckListBox .cardImg {
+    width: 20%;
+    margin-bottom: 4%;
+  }
+}
+
+#deck .deckListinner .deckListBox .cardName {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+  line-height: 1.2;
+  width: auto;
+}
+
+#deck .deckListinner .deckListBox .cardName span {
+  display: block;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+#deck .deckListinner .deckListBox .btnBox .addDelete {
+  width: 49%;
+  display: inline-block;
+}
+
+#deck .deckListinner .deckListBox .btnBox .addDelete a {
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  width: 35% !important;
+  line-height: 1.5;
+  height: 50px;
+  position: relative;
+}
+
+@media (max-width: 999px) {
+  #deck .deckListinner .deckListBox .btnBox .addDelete a {
+    width: 45% !important;
+  }
+}
+
+#deck .deckListinner .deckListBox .btnBox .addDelete a:hover {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#deck .deckListinner .deckListBox .btnBox .addDelete a img {
+  height: 23px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#deck .deckListinner .deckListBox .btnBox .addDelete a img:hover {
+  opacity: 1;
+}
+
+#deck .deckListinner .deckListBox .btnBox .addDelete a.add {
+  background: #e13141;
+  -webkit-box-shadow: 0px 5px 0px 0px #b52835;
+  box-shadow: 0px 5px 0px 0px #b52835;
+}
+
+@media (max-width: 999px) {
+  #deck .deckListinner .deckListBox .btnBox .addDelete a.add {
+    -webkit-box-shadow: 0px 2px 0px 0px #b52835;
+    box-shadow: 0px 2px 0px 0px #b52835;
+  }
+}
+
+#deck .deckListinner .deckListBox .btnBox .addDelete a.add:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#deck .deckListinner .deckListBox .btnBox .addDelete a.delete {
+  background: #0452b5;
+  -webkit-box-shadow: 0px 5px 0px 0px #02408f;
+  box-shadow: 0px 5px 0px 0px #02408f;
+}
+
+@media (max-width: 999px) {
+  #deck .deckListinner .deckListBox .btnBox .addDelete a.delete {
+    -webkit-box-shadow: 0px 2px 0px 0px #02408f;
+    box-shadow: 0px 2px 0px 0px #02408f;
+  }
+}
+
+#deck .deckListinner .deckListBox .btnBox .addDelete a.delete:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#deck .deckListinner .deckListBox .btnBox .detail {
+  width: 49%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  zoom: 1;
+}
+
+#deck .deckListinner .deckListBox .btnBox .detail a {
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+  background: #2bb6ff;
+  -webkit-box-shadow: 0px 5px 0px 0px #249ad8;
+  box-shadow: 0px 5px 0px 0px #249ad8;
+  width: 35%;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 999px) {
+  #deck .deckListinner .deckListBox .btnBox .detail a {
+    -webkit-box-shadow: 0px 2px 0px 0px #249ad8;
+    box-shadow: 0px 2px 0px 0px #249ad8;
+    width: 40%;
+  }
+}
+
+#deck .deckListinner .deckListBox .btnBox .detail a img {
+  height: 30px;
+  vertical-align: middle;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+#deck .deckListinner .deckListBox .btnBox .detail a:hover {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#deck .deckListinner .deckListBox .btnBox .detail .qaNone {
+  background: #a2a2a2 url(../../../images/mydeck/qa.png) no-repeat center 50%;
+  background-size: 40px auto;
+  text-indent: -9876px;
+  -webkit-box-shadow: 0px 5px 0px 0px #7d7d7d;
+  box-shadow: 0px 5px 0px 0px #7d7d7d;
+  width: 35%;
+  padding: 12px 0;
+  line-height: 1.5;
+  display: inline-block;
+  border-radius: 5px;
+  vertical-align: bottom;
+  text-align: left;
+}
+
+@media (max-width: 999px) {
+  #deck .deckListinner .deckListBox .btnBox .detail .qaNone {
+    width: 40%;
+    -webkit-box-shadow: 0px 2px 0px 0px #7d7d7d;
+    box-shadow: 0px 2px 0px 0px #7d7d7d;
+    height: 50px;
+  }
+}
+
+#deck .cardSum {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  font-size: 120%;
+  margin-bottom: 20px;
+}
+
+#deck .deckConf {
+  background: #0452b5;
+  padding: 30px 30px 40px;
+  color: #fff;
+}
+
+@media (max-width: 999px) {
+  #deck .deckConf {
+    padding: 5%;
+  }
+}
+
+#deck .deckConf input[type="text"] {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#deck .deckConf .txtCol {
+  margin-top: 10px;
+}
+
+#deck .deckConf .btnDeckConf {
+  width: 70%;
+  display: inline-block;
+  padding: 10px;
+  background: #ff6271;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  font-size: 120%;
+  font-weight: bold;
+  margin-top: 20px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  position: relative;
+  text-indent: -1em;
+}
+
+#deck .deckConf .btnDeckConf:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+#deck .deckConf .btnDeckConf::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 40px;
+}
+
+@media (max-width: 999px) {
+  #deck .deckConf .btnDeckConf::before {
+    width: 25px;
+    height: 25px;
+    right: 8px;
+  }
+}
+
+#deck .deckConf .btnDeckConf::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border: 8px solid transparent;
+  border-left: 10px solid #ff6271;
+}
+
+@media (max-width: 999px) {
+  #deck .deckConf .btnDeckConf::after {
+    right: 11px;
+    width: 5px;
+    height: 5px;
+    border: 5px solid transparent;
+    border-left: 6px solid #ff6271;
+  }
+}
+
+#deck .deckConf .btnReset {
+  margin-left: 8%;
+  color: #fff;
+  text-decoration: underline;
+}
+
+#deck .deckConf .btnReset:hover {
+  text-decoration: none;
+}
+
+#deck .deckCheck {
+  width: 1000px;
+  margin: auto auto 50px auto;
+}
+
+@media (max-width: 999px) {
+  #deck .deckCheck {
+    width: 100%;
+  }
+}
+
+#deck .deckCheck dt {
+  background: #d9f3ff;
+  padding: 15px;
+  color: #2bb6ff;
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+@media (max-width: 999px) {
+  #deck .deckCheck dt {
+    padding: 2%;
+  }
+}
+
+#deck .deckCheck dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: #fff;
+}
+
+@media (max-width: 999px) {
+  #deck .deckCheck dd {
+    padding: 3%;
+  }
+}
+
+#deck .deckCheck dd div {
+  padding: 10px;
+  position: relative;
+}
+
+@media (max-width: 999px) {
+  #deck .deckCheck dd div {
+    padding: 2%;
+  }
+}
+
+#deck .deckCheck dd div p {
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 999px) {
+  #deck .deckCheck dd div p {
+    padding: 4%;
+  }
+}
+
+#deck .deckCheck dd div img {
+  width: 100px;
+}
+
+@media (max-width: 999px) {
+  #deck .deckCheck dd div img {
+    width: 80px;
+  }
+}
+
+#deck .deckCheck dd div img.imgA {
+  position: absolute;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#deck .deckCheck dd div img.imgA.imgNone {
+  opacity: 0;
+}
+
+#deck .deckCheck dd div .btnChenge {
+  position: absolute;
+  background: url(../../../images/mydeck/ico_change-mydeck.png) no-repeat;
+  background-size: contain;
+  z-index: 99;
+  text-indent: -999em;
+  overflow: hidden;
+  width: 40%;
+  height: 20%;
+  right: 2%;
+  right: 0;
+  bottom: 25%;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 999px) {
+  #deck .deckCheck dd div .btnChenge {
+    bottom: 30%;
+  }
+}
+
+#deck .deckCheck dd div .btnChenge:focus {
+  outline: none;
+}
+
+#deck .linkBtn {
+  display: block;
+  clear: both;
+  width: 80%;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 8px;
+  background: #cc0000;
+  -webkit-box-shadow: 0px 4px 0px 0px #404040;
+  box-shadow: 0px 4px 0px 0px #404040;
+  text-decoration: none;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #FFF;
+  border: solid 3px #000;
+}
+
+#deck .linkBtn:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+#deck .btnBack {
+  display: block;
+  clear: both;
+  width: 20%;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 8px;
+  background: #b9b9b9;
+  -webkit-box-shadow: 0px 4px 0px 0px #b4212b;
+  box-shadow: 0px 4px 0px 0px #777777;
+  text-decoration: none;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #FFF;
+  -webkit-box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+#deck .btnBack:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+#deck_area a.btn_save {
+  top: 30px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50px;
+  color: #2bb6ff;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 999px) {
+  #deck_area a.btn_save {
+    top: 0;
+    padding: 10px;
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+#deck_area a.btn_save::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: #2bb6ff;
+  border-radius: 40px;
+}
+
+@media (max-width: 999px) {
+  #deck_area a.btn_save::before {
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#deck_area a.btn_save::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  border: 8px solid transparent;
+  border-left: 10px solid #fff;
+}
+
+@media (max-width: 999px) {
+  #deck_area a.btn_save::after {
+    right: 15px;
+    width: 3px;
+    height: 3px;
+    border: 5px solid transparent;
+    border-left: 6px solid #fff;
+  }
+}
+
+#deck_area a.btn_save:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translate(0, 2%);
+  transform: translate(0, 2%);
+}
+
+#mydecklist h1 {
+  padding: 10px;
+  background: #d9f3ff;
+  color: #2bb6ff;
+  position: static;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#deck_conf {
+  background: #0452b5;
+  padding: 30px 30px 40px;
+  color: #fff;
+  margin-top: -80px;
+}
+
+@media (max-width: 999px) {
+  #deck_conf {
+    padding: 5%;
+    margin-top: 0;
+  }
+}
+
+#deck_conf input[type="text"] {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#deck_conf .txtCol {
+  margin-top: 10px;
+}
+
+#deck_conf .btnDeckConf {
+  width: 70%;
+  display: inline-block;
+  padding: 10px;
+  background: #ff6271;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  font-size: 120%;
+  font-weight: bold;
+  margin-top: 20px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  position: relative;
+  text-indent: -1em;
+}
+
+#deck_conf .btnDeckConf:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+#deck_conf .btnDeckConf::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 40px;
+}
+
+@media (max-width: 999px) {
+  #deck_conf .btnDeckConf::before {
+    width: 25px;
+    height: 25px;
+    right: 8px;
+  }
+}
+
+#deck_conf .btnDeckConf::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border: 8px solid transparent;
+  border-left: 10px solid #ff6271;
+}
+
+@media (max-width: 999px) {
+  #deck_conf .btnDeckConf::after {
+    right: 11px;
+    width: 5px;
+    height: 5px;
+    border: 5px solid transparent;
+    border-left: 6px solid #ff6271;
+  }
+}
+
+#deck_conf .btnReset {
+  margin-left: 8%;
+  color: #fff;
+  text-decoration: underline;
+}
+
+#deck_conf .btnReset:hover {
+  text-decoration: none;
+}
+
+#deck_comp {
+  width: 100%;
+  padding-bottom: 7% !important;
+}
+
+@media (max-width: 999px) {
+  #deck_comp {
+    padding-bottom: 18% !important;
+  }
+}
+
+#deck_comp .btn_cback {
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  background: #a9b2bc;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+#deck_comp .btn_cback:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translate(0, 2%);
+  transform: translate(0, 2%);
+}
+
+#deck_comp .btn_ccreate {
+  background: #2bb6ff;
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  width: 48%;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#deck_comp .btn_ccreate:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translate(0, 2%);
+  transform: translate(0, 2%);
+}
+
+#deck_comp .btn_csave {
+  background: #0452b5;
+  color: #fff;
+  padding: 10px;
+  width: 48%;
+  display: inline-block;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: 2%;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#deck_comp .btn_csave:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translate(0, 2%);
+  transform: translate(0, 2%);
+}
+
+#deck_comp .btn_csave.event {
+  text-decoration: none;
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+  #facebox {
+    left: 0 !important;
+  }
+  #facebox .popup {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  #facebox .popup .expCol li {
+    padding-top: 2%;
+    margin-right: 0 !important;
+    width: 100%;
+  }
+  #facebox .popup .expCol li span {
+    width: calc(100% - 40px);
+    text-indent: -1em;
+    padding-left: 1em;
+    display: inline-block;
+  }
+  #facebox .close {
+    top: -10px !important;
+    right: -10px !important;
+    width: 35px !important;
+    height: 35px !important;
+    padding: 10px !important;
+  }
+}
+
+.titNo {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.cardlistBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cardlistBox li {
+  background: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 3px 10px;
+}
+
+@media (max-width: 999px) {
+  .cardlistBox li {
+    margin: 0 0.6vw 1.4vw;
+    border-radius: 3px;
+  }
+}
+
+.cardlistBox li .btnChenge {
+  position: absolute;
+  background: url(../../../images/mydeck/ico_change-mydeck.png) no-repeat;
+  background-size: contain;
+  z-index: 99;
+  text-indent: -999em;
+  overflow: hidden;
+  width: 40%;
+  height: 20%;
+  right: 2%;
+  right: 0;
+  bottom: 25%;
+  border: none;
+  cursor: pointer;
+}
+
+.cardlistBox li img {
+  padding: 10px;
+  position: relative;
+}
+
+@media (max-width: 999px) {
+  .cardlistBox li img {
+    width: 15vw;
+    padding: 0.5vw;
+  }
+}
+
+.cardlistBox li img.imgA {
+  position: absolute;
+  z-index: 2;
+}
+
+.cardlistBox li img.imgA.imgNone {
+  opacity: 0;
+}
+
+.cardlistBox li .cardCount {
+  color: #e13141;
+  text-align: center;
+}
+
+.cardlistBox li .detail {
+  width: 100%;
+  background: #d9f3ff;
+  display: block;
+  padding-top: 7px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 999px) {
+  .cardlistBox li .detail {
+    border-radius: 0 0 3px 3px;
+    padding-top: 0;
+    height: 6vw;
+  }
+}
+
+.cardlistBox li .detail img {
+  text-align: center;
+  width: 12%;
+  padding: 0;
+}
+
+@media (max-width: 999px) {
+  .cardlistBox li .detail img {
+    width: 2.5vw;
+    vertical-align: middle;
+  }
+}
+
+.deckurl {
+  position: relative;
+}
+
+.deckurl h3 {
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  background: none;
+  padding: 0;
+}
+
+.deckurl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0452b5;
+  -webkit-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+}
+
+.deckurl .copyUrl {
+  text-align: center;
+}
+
+.deckurl .copyUrl input {
+  padding: 17px 10px 12px;
+  width: 90%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+@media (max-width: 999px) {
+  .deckurl .copyUrl input {
+    padding: 15px 10px 14px;
+    width: 74%;
+  }
+}
+
+.deckurl .copyUrl a {
+  padding: 10px 20px;
+  background: #d9f3ff;
+  color: #2bb6ff;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 999px) {
+  .deckurl .copyUrl a {
+    padding: 13px 20px;
+  }
+}
+
+.deckurl .sns {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.deckurl .sns a {
+  width: 80px;
+  height: auto;
+  display: inline-block;
+  padding: 10px;
+}
+
+.deckurl .sns a img {
+  width: 100%;
+  -webkit-box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.deckurl .sns a img:hover {
+  -webkit-box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0);
+  -webkit-transform: translate(0, 2%);
+  transform: translate(0, 2%);
+}
+
+.deckurl .btnCompcreate {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+  text-indent: -1em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 50%;
+  padding: 15px 49px;
+  position: relative;
+  background: #fff;
+  border-radius: 200px;
+  color: #0452b5;
+  font-size: 140%;
+  margin: 20px auto;
+  -webkit-box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 999px) {
+  .deckurl .btnCompcreate {
+    width: 90%;
+  }
+}
+
+.deckurl .btnCompcreate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: #0452b5;
+  border-radius: 40px;
+}
+
+.deckurl .btnCompcreate::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border: 8px solid transparent;
+  border-left: 10px solid #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  #compDeck .inner {
+    padding: 30px 1vw 40px;
+  }
+}
+
+article#mainCol .cardlistBox {
+  display: block;
+}
+
+article#mainCol .cardlistBox .detail img {
+  margin: auto;
+}
+
+article#mainCol .deckurl::before {
+  display: none;
+}
+
+article#mainCol .copyUrl a {
+  background: #000000;
+  color: #ffffff;
+}
+
+.cmnBox.table {
+  padding: 0;
+  margin: auto;
+  width: 94%;
+}
+
+.cmnBox.table .tableCol dt {
+  padding: 15px;
+  background: #d9f3ff;
+  text-align: center;
+}
+
+.cmnBox.table .tableCol dd {
+  padding: 15px 20px;
+}
+
+.cmnBox.table dl + dl {
+  margin: 0;
+  padding: 0;
+}

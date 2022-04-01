@@ -1,0 +1,22 @@
+{
+  "permissions": {},
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "reCaptcha",
+      "environmentVariableName": "reCaptcha"
+    },
+    {
+      "cloudFormationParameterName": "reCaptchaSecret",
+      "environmentVariableName": "reCaptchaSecret"
+    },
+    {
+      "cloudFormationParameterName": "mongoDb",
+      "environmentVariableName": "mongoDB"
+    },
+    {
+      "cloudFormationParameterName": "auth",
+      "environmentVariableName": "auth"
+    }
+  ]
+}

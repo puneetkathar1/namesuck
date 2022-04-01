@@ -1,0 +1,31 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-final-dev-33116-authRole",
+      "UnauthRoleArn": "arn:aws:iam::607569311758:role/amplify-final-dev-33116-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::607569311758:role/amplify-final-dev-33116-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-final-dev-33116-deployment",
+      "UnauthRoleName": "amplify-final-dev-33116-unauthRole",
+      "StackName": "amplify-final-dev-33116",
+      "StackId": "arn:aws:cloudformation:us-west-2:607569311758:stack/amplify-final-dev-33116/1aa4cf20-b13e-11ec-9cbc-027b6e7d6ea7",
+      "AmplifyAppId": "d2lxcvo5boq96d"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2lxcvo5boq96d",
+          "type": "cicd"
+        }
+      },
+      "function": {
+        "final7eaecc10": {
+          "reCaptcha": "6LfN4zQfAAAAAJ8f7_WKGv6oAGBJJUKT4LpT7RIk",
+          "reCaptchaSecret": "6LfN4zQfAAAAAAeqC_LZ5mLu_OJ495lluWCbhEf6",
+          "mongoDb": "mongodb+srv://admin:f7p0zYPDsaEIH117@cluster0.uvuoa.mongodb.net/namesuck?retryWrites=true&w=majority",
+          "auth": "apif3e42fea-7b35-47ad-bad4-114a14323176api"
+        }
+      }
+    }
+  }
+}
