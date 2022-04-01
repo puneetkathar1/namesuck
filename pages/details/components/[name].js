@@ -364,10 +364,9 @@ const SVGComponent = ({ origin }) => {
 export default SVGComponent;
 
 export async function getServerSideProps(ctx) {
-  const { name } = ctx.query;
   const { origin } = absoluteUrl(ctx.req);
 
   return {
-    props: { origin, name2: name },
+    props: { origin },
   };
 }
