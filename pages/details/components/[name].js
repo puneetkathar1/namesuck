@@ -36,10 +36,14 @@ const style2 = {
   borderRadius: "0.6rem",
 };
 
-const SVGComponent = ({ data, origin }) => {
+const SVGComponent = ({ origin }) => {
+
+  const router = useRouter()
+
+
   const { address } = useWeb3();
 
-  React.useEffect(() => {
+  React.useEffect(async () => {
     if (typeof window !== "undefined") {
       window.addEventListener("message", (event) => {
         // IMPORTANT: check the origin of the data!
@@ -58,43 +62,55 @@ const SVGComponent = ({ data, origin }) => {
         }
       });
     }
+    const options = {
+      method: "GET",
+      url: `https://api.opensea.io/api/v1/asset/0x101446d295c7aff9ca9573c611fede0c3841d707/${router.query.name}`,
+    };
+
+    await axios
+      .request(options)
+      .then(function (response) {
+        setNFTdata(response.data);
+        setSrc(response.data.image_url)
+        getImg(response.data)
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+
   }, []);
 
-  const [NFTdata, setNFTdata] = useState(data);
+  const [NFTdata, setNFTdata] = useState();
 
   const [open, setOpen] = React.useState(false);
   const [scary, setScary] = React.useState("0");
-  const [img, setImg] = React.useState(1);
+  const [img, setImg] = React.useState();
 
-  const getImg = () => {
-    0 <= data.token_id <= 2041
+  const getImg = (data) => {
+    0 <= data.token_id && data.token_id <= 2041
       ? setImg(1)
-      : 2042 <= data.token_id < 4077
+      : 2042 <= data.token_id && data.token_id <= 4077
       ? setImg(2)
-      : 4078 <= data.token_id < 6113
+      : 4078 <= data.token_id && data.token_id <= 6113
       ? setImg(3)
-      : 6114 <= data.token_id < 8152
+      : 6114 <= data.token_id && data.token_id <= 8152
       ? setImg(4)
-      : 8153 <= data.token_id < 10193
+      : 8153 <= data.token_id && data.token_id <= 10193
       ? setImg(5)
-      : 10194 <= data.token_id < 12234
+      : 10194 <= data.token_id && data.token_id <= 12234
       ? setImg(6)
-      : 12235 <= data.token_id < 14275
+      : 12235 <= data.token_id && data.token_id <= 14275
       ? setImg(7)
-      : 14276 <= data.token_id < 16316
+      : 14276 <= data.token_id && data.token_id <= 16316
       ? setImg(8)
-      : 16317 <= data.token_id < 18357
+      : 16317 <= data.token_id && data.token_id <= 18357
       ? setImg(9)
-      : 18358 <= data.token_id < 20396
+      : 18358 <= data.token_id && data.token_id <= 20396
       ? setImg(10)
-      : 20397 <= data.token_id < 20401
+      : 20397 <= data.token_id && data.token_id <= 20401
       ? setImg(11)
       : setImg(1);
   };
-
-  useEffect(() => {
-    getImg();
-  }, []);
 
   const handleOpen = () => {
     const timeout = setTimeout(() => {
@@ -126,7 +142,7 @@ const SVGComponent = ({ data, origin }) => {
     setName(e.target.value);
   };
 
-  const [src, setSrc] = React.useState(data.image_url);
+  const [src, setSrc] = React.useState();
 
   const [error, setError] = React.useState({
     severity: "",
@@ -223,7 +239,9 @@ const SVGComponent = ({ data, origin }) => {
   return (
     <>
       <div onClick={handleOpen}>
-        {src ? <Image src={src} height={1895} width={1286} alt="img" /> : null}
+        {src ? (
+          <Image src={src} height={1895} width={1286} alt="img" />
+        ) : null}
       </div>
       <Modal
         open={open}
@@ -348,21 +366,8 @@ export default SVGComponent;
 export async function getServerSideProps(ctx) {
   const { name } = ctx.query;
   const { origin } = absoluteUrl(ctx.req);
-  let data = [];
-  const options = {
-    method: "GET",
-    url: `https://api.opensea.io/api/v1/asset/0x101446d295c7aff9ca9573c611fede0c3841d707/${name}`,
-  };
 
-  await axios
-    .request(options)
-    .then(function (response) {
-      data = response.data;
-    })
-    .catch(function (error) {
-      console.error(error);
-    });
   return {
-    props: { data, origin },
+    props: { origin, name2: name },
   };
 }

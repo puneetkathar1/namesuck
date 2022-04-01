@@ -25,7 +25,6 @@ export default async (req, res) => {
         .request(options)
         .then(function (response) {
           data = response.data;
-          console.log(response.data)
         })
         .catch(function (error) {
           console.error(error);
