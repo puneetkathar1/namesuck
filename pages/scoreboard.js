@@ -95,7 +95,7 @@ export default function CustomizedTables({ res2 }) {
           float: "left",
         }}
       >
-        Scoreboard
+        Score Board
       </span>
       <span
         onClick={handleOpen}

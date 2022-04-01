@@ -16,7 +16,7 @@ export default async (req, res) => {
     try {
       await limiter.check(res, 10, "CACHE_TOKEN"); // 10 requests per minute
       mongoose.connect(
-        "mongodb+srv://admin:f7p0zYPDsaEIH117@cluster0.uvuoa.mongodb.net/namesuck?retryWrites=true&w=majority",
+        "mongodb+srv://admin:HYzIdqsPNMe6bkQe@cluster0.uvuoa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
         {
           useNewUrlParser: true,
           useUnifiedTopology: true,

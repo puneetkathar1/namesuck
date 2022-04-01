@@ -22,7 +22,7 @@
         "final7eaecc10": {
           "reCaptcha": "6LfN4zQfAAAAAJ8f7_WKGv6oAGBJJUKT4LpT7RIk",
           "reCaptchaSecret": "6LfN4zQfAAAAAAeqC_LZ5mLu_OJ495lluWCbhEf6",
-          "mongoDb": "mongodb+srv://admin:f7p0zYPDsaEIH117@cluster0.uvuoa.mongodb.net/namesuck?retryWrites=true&w=majority",
+          "mongoDb": "mongodb+srv://admin:HYzIdqsPNMe6bkQe@cluster0.uvuoa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
           "auth": "apif3e42fea-7b35-47ad-bad4-114a14323176api"
         }
       }

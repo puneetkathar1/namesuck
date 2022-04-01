@@ -10,10 +10,18 @@ const connectors = {
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <title>Hot Tape Girls Club</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+        <Head>
+          {/* PWA primary color */}
+          <meta name="theme-color" />
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#000000" />
+          <meta
+            name="description"
+            content="Come and join a sensual and terrific NFT project! HTGC disrupts the NFT format and adds new value to NFT. 10+ tape girls are waiting you to remove their tapes!"
+          />
+          <title>Hot Tape Girls Club</title>
+        </Head>
       <ThirdwebWeb3Provider
         supportedChainIds={supportedChainIds}
         connectors={connectors}

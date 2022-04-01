@@ -13,7 +13,7 @@ export default async (req, res) => {
 
   if (auth === "2api2f3e42fea-7b35-47ad-bad4-114a143231762api2") {
     mongoose.connect(
-      "mongodb+srv://admin:f7p0zYPDsaEIH117@cluster0.uvuoa.mongodb.net/namesuck?retryWrites=true&w=majority",
+      "mongodb+srv://admin:HYzIdqsPNMe6bkQe@cluster0.uvuoa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
