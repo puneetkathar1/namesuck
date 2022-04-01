@@ -20,8 +20,8 @@
       },
       "function": {
         "final7eaecc10": {
-          "reCaptcha": "6LfN4zQfAAAAAJ8f7_WKGv6oAGBJJUKT4LpT7RIk",
-          "reCaptchaSecret": "6LfN4zQfAAAAAAeqC_LZ5mLu_OJ495lluWCbhEf6",
+          "reCaptcha": "6LdX9TcfAAAAAEtfuS7CAdTbma-0r8Hnd1itDX-w",
+          "reCaptchaSecret": "6LdX9TcfAAAAAAn1U-4h_oHSRfdDw1kL6TSpVVSk",
           "mongoDb": "mongodb+srv://admin:HYzIdqsPNMe6bkQe@cluster0.uvuoa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
           "auth": "apif3e42fea-7b35-47ad-bad4-114a14323176api"
         }

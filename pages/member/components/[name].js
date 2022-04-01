@@ -41,7 +41,7 @@ const SVGComponent = ({ data, origin }) => {
 
   const [open, setOpen] = React.useState(false);
   const [scary, setScary] = React.useState("0");
-  const [img, setImg] = React.useState(1);
+  const [img, setImg] = React.useState();
 
   React.useEffect(() => {
     if (typeof window !== "undefined") {
@@ -87,7 +87,7 @@ const SVGComponent = ({ data, origin }) => {
       ? setImg(10)
       : 20397 <= data.token_id && data.token_id <= 20401
       ? setImg(11)
-      : setImg(1);
+      : setImg();
   };
 
   React.useEffect(() => {
@@ -296,7 +296,7 @@ const SVGComponent = ({ data, origin }) => {
           <div>
             <ReCAPTCHA
               ref={reCaptcha}
-              sitekey="6LfN4zQfAAAAAJ8f7_WKGv6oAGBJJUKT4LpT7RIk"
+              sitekey="6LdX9TcfAAAAAEtfuS7CAdTbma-0r8Hnd1itDX-w"
               onChange={(token) => setToken(token)}
               onExpired={(e) => setToken("")}
               size="compact"

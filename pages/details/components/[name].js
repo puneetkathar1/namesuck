@@ -37,9 +37,7 @@ const style2 = {
 };
 
 const SVGComponent = ({ origin }) => {
-
-  const router = useRouter()
-
+  const router = useRouter();
 
   const { address } = useWeb3();
 
@@ -70,14 +68,13 @@ const SVGComponent = ({ origin }) => {
     await axios
       .request(options)
       .then(function (response) {
+        getImg(response.data);
+        setSrc(response.data.image_url);
         setNFTdata(response.data);
-        setSrc(response.data.image_url)
-        getImg(response.data)
       })
       .catch(function (error) {
         console.error(error);
       });
-
   }, []);
 
   const [NFTdata, setNFTdata] = useState();
@@ -109,7 +106,7 @@ const SVGComponent = ({ origin }) => {
       ? setImg(10)
       : 20397 <= data.token_id && data.token_id <= 20401
       ? setImg(11)
-      : setImg(1);
+      : setImg();
   };
 
   const handleOpen = () => {
@@ -239,9 +236,7 @@ const SVGComponent = ({ origin }) => {
   return (
     <>
       <div onClick={handleOpen}>
-        {src ? (
-          <Image src={src} height={1895} width={1286} alt="img" />
-        ) : null}
+        {src ? <Image src={src} height={1895} width={1286} alt="img" /> : null}
       </div>
       <Modal
         open={open}
@@ -312,7 +307,7 @@ const SVGComponent = ({ origin }) => {
           <div>
             <ReCAPTCHA
               ref={reCaptcha}
-              sitekey="6LfN4zQfAAAAAJ8f7_WKGv6oAGBJJUKT4LpT7RIk"
+              sitekey="6LdX9TcfAAAAAEtfuS7CAdTbma-0r8Hnd1itDX-w"
               onChange={(token) => setToken(token)}
               onExpired={(e) => setToken("")}
               size="compact"
